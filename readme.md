@@ -1,14 +1,12 @@
-![cover](../webpack-test/src/assets/img/t%C5%82o.png)
+![cover](src/assets/img/t%C5%82o.png)
 
-# WTF Webpack Starter Kit 
+# Kościół w Biedrzychowicach
 
-Simple toolkit for your static websites development.
+Strona parafialna
 
 ## How to use it?
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
+wpisz 'npm install', a następnie masz takie opcje:
 
 `npm run start` - runs development mode
 
