@@ -5,7 +5,8 @@ module.exports = {
   /* here you can define another js file */
   entry: {
     index: "./src/js/index.js",
-    another: "./src/js/another.js",
+    kościół: "./src/js/kościół.js",
+    Historia: "./src/js/Historia.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -77,22 +78,58 @@ module.exports = {
 
     /* here you can define another html file and its dependencies */
     new HtmlWebpackPlugin({
-      template: "./src/pages/index.html",
+      template: "./src/pages/index2.html",
       inject: true,
       chunks: ["index"],
+      filename: "index2.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/index.html",
+      inject: true,
+      chunks: ["index", "kościół"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/another.html",
-      inject: true,
-      chunks: ["index", "another"],
-      filename: "another.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/pawel.html",
+      template: "./src/pages/linki.html",
       inject: true,
       chunks: ["index"],
-      filename: "pawel.html",
+      filename: "linki.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/forum-komunia.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "forum-komunia.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/forum.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "forum.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/HistoriaKościoła.html",
+      inject: true,
+      chunks: ["index", "Historia"],
+      filename: "HistoriaKościoła.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/News.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "News.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/ogłoszenia.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "ogłoszenia.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/pokuta.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "pokuta.html",
     }),
    
   ],

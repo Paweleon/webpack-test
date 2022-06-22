@@ -1,153 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+<html lang="pl">
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+<head>
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kościół Św. Antoniego</title>
+    
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
 
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-  </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
-  </body>
+<body class="body">
+
+    <p class="cytat">
+
+        „Będziesz miłował Pana, Boga swego, z całego serca swego i z całej duszy swojej, i z całej myśli swojej, i z
+        całej siły swojej. A drugie jest to: Będziesz miłował bliźniego swego jak siebie samego”.
+        Ew. Marka 12:30–31
+
+    </p>
+
+    <main class="main" id="top">
+        
+        <header class="header">
+            <video src="../assets/img/Logo2.mp4" width=1000px height=350px class="video" autoplay loop><img
+                src="../assets/img/logo1.png" alt="logo"></video>
+
+            <nav class="navigation">
+                <div class="navigation__button navigation__button--js" aria-label="otwórz menu">
+                    <span class="bar__zero bar__zero--js"></span>
+                    <span class="bar__first bar__first--js"></span>
+                    <span class="bar__second bar__second--js"></span>
+                </div>
+
+                <div class="navigation__list navigation--js">
+                    <ul class="navigation__menu">
+                        <li class="navigation__dropdown"><a href="index.html" class=dropdown__icon>Informacje</a></li>
+
+                        <li class="navigation__dropdown"><a href="#" class=dropdown__icon>Aktualności</a>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="ogłoszenia.html"
+                                        class="dropdown__link">Ogłoszenia</a> </li>
+                                <li class="dropdown__item"><a href="News.html" class="dropdown__link">Wydarzenia</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Czytanie na każdy
+                                        dzień</a></li>
+                                <li class="dropdown__item"><a href="forum.html" class="dropdown__link">Forum</a> </li>
+                                <li class="dropdown__item"><a href="linki.html" class="dropdown__link">Ciekawe linki</a>
+                                </li>                               
+                            </ul>
+                        </li>
+
+                        <li class="navigation__dropdown"><a href="#" class="dropdown__icon">Sakramenty</a>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Chrzest</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Bierzmowanie</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Eucharystia</a> </li>
+                                <li class="dropdown__item"><a href="pokuta.html" class="dropdown__link">Pokuta</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Namaszczenie Chorych</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Małżenstwo</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Kapłaństwo</a> </li>
+                            </ul>
+                        </li>
+
+                        <li class="navigation__dropdown"><a href="#" class=dropdown__icon>Historia</a>
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="HistoriaKościoła.html"
+                                        class="dropdown__link">Historia Kościoła</a> </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Byli proboszczowie</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Biedrzychowic</a>
+                                </li>
+                                <li class="dropdown__item"><a href="#" class="dropdown__link">Historia Okolic</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="section__info section--js">
+
+            <h2 class="sectionheader">Informacje</h2>
+
+            <article class="article">
+
+                <p class="paragraph__left">
+
+                    Msze św. w niedzielę: <br>
+                    Msze święte w dni powszednie: <br>
+                    Adres parafii: <br>
+                    Proboszcz: <br>
+                    Tel. Proboszcz, kancelaria, plebania: <br>
+                    Metropolia: <br>
+                    Diecezja: <br>
+                    Dekanat: <br>
+                    Odpust: <br>
+                    Obszar parafii: <br>
+
+                </p>
+
+                <p class="paragraph__right">
+
+                    9.00, 11.00 <br>
+                    Wtorek - piątek 17:00, sobota: 9:00 <br>
+                    Biedrzychowice 90, 59-830 Olszyna <br>
+                    ks. Maciej Szymanowski <br>
+                    75 722 15 90 <br>
+                    Wrocławska <br>
+                    Legnicka <br>
+                    Gryfów Śląski <br>
+                    13 czerwca <br>
+                    Kałużna, Karłowice, Nowa Świdnica, Zapusta<br>
+
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section class="section__duty">
+
+            <h2 class="sectionheader">W jakie dni w roku mamy obowiązek uczestniczyć we Mszy świętej?</h2>
+
+            <ul class="paragraph">
+
+                <li>każda niedziela</li>
+                <li>1 stycznia - uroczystość Bożej Rodzicielki</li>
+                <li>6 stycznia - uroczystość Trzech Króli</li>
+                <li>Wielkanoc - uroczystość Zmartwychwstania Pańskiego</li>
+                <li>Boże Ciało - uroczystość Ciała i Krwi Pańskiej</li>
+                <li>15 sierpnia - uroczystość Wniebowzięcia NPM</li>
+                <li>25 grudnia - uroczystość Bożego Narodzenia</li>
+
+            </ul>
+
+        </section>
+
+
+        <section class="section__antoni">
+
+            <h2 class="sectionheader">Św. Antoni z Padwy</h2>
+
+            <p class="paragraph">
+                Święty Antoni jest patronem osób i rzeczy zaginionych.
+                Pochodził z bogatej, szanowanej rodziny.
+                Ochrzczono go imieniem Ferdynand. Jeszcze zanim ukończył 20 lat, wstąpił do zakonu Kanoników Regularnych
+                św. Augustyna. Święty Antoni Padewski to jeden z najpopularniejszych świętych Kościoła i najbardziej
+                interesowny, bo podobno szybciej spełnia prośby, jeżeli obieca mu się kilku groszy na rzecz biednych.
+
+            </p>
+
+
+
+        </section>
+
+
+        <section class="section__village">
+
+            <h2 class="sectionheader">Biedrzychowice</h2>
+
+            <p class="paragraph">
+
+                Biedrzychowice to duża wieś znajdująca się w województwie dolnośląskim, w powiecie lubańskim, w gminie
+                Olszyna. Miejscowość jest położona nad górnym biegiem Biedrzychówki, na obszarze Wzgórz Radoniowskich,
+                wchodzących w skład Pogórza Izerskiego.
+                Według Narodowego Spisu Powszechnego z 2011 roku Biedrzychowice liczyły 966 mieszkańców. Jest to
+                największa miejscowością gminy Olszyna.
+
+            </p>
+
+            <a href="#top" class="top">w górę! </a>
+
+        </section>
+
+
+        <div class="church__left">
+            <img src="https://polska-org.pl/foto/404/Kosciol_sw_Antoniego_Biedrzychowice_404939.jpg" width="200"
+                height="200" alt="przód kościoła">
+        </div>
+
+        <div class="church__right">
+            <img src="../assets/img/Kościół.png" width="200" height="200" alt="Kościół">
+        </div>
+
+        <div class="church__inside">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Biedrzychowice%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Antoniego_%28FriedersdorfOL-Kirche-3%29.jpg/800px-Biedrzychowice%2C_ko%C5%9Bci%C3%B3%C5%82_%C5%9Bw._Antoniego_%28FriedersdorfOL-Kirche-3%29.jpg?20150504103917"
+                width="200" height="200" alt="wnętrze Kościoła">
+        </div>
+
+        <div class="church__back">
+            <img src="https://polska-org.pl/foto/182/Kosciol_sw_Antoniego_Biedrzychowice_182568.jpg" width="200"
+                height="200" alt="tył kościołą">
+        </div>
+
+        <div class="Antoni__left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Antonius_von_Padua_mit_Jesuskind_c._1700.png"
+                width="200" height="200" alt="Św. Antoni">
+        </div>
+
+        <div class="Antoni__right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/St._Anthony_-_facial_reconstruction_-_for_mobile_and_newspaper.jpg/250px-St._Anthony_-_facial_reconstruction_-_for_mobile_and_newspaper.jpg"
+                width="200" height="200" alt="Św. Antoni">
+        </div>
+
+        <div class="village__palace">
+            <img src="http://www.zamki.karr.pl/galerie/biedrzychowice/zdgl.jpg" width="200" height="200"
+                alt="Pałac w Biedrzychowicach">
+        </div>
+
+        <div class="village__tower">
+            <img src="https://polska-org.pl/foto/27/Wieza_widokowa_ruina_Biedrzychowice_27140.jpg" width="200"
+                height="200" alt="Wieża w Biedrzychowicach">
+        </div>
+
+        <div class="info__down">
+            <img src="https://ofm-przemysl.pl/wp-content/uploads/2022/04/ostatnia-wieczerza-730x300.jpg" width="900"
+                height="300" alt="Ostatnia wieczerza">
+        </div>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <p>od początku dnia minęło:<span class="time--js"></span></p>
+
+        kontakt do do twórcy strony: <br>
+        723 613 221
+
+    </footer>
+
+</body>
+
 </html>
